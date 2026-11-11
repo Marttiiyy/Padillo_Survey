@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Food Preference Survey</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	</head>
+
+	<body>
+
+        <h2>Food Preference Survey</h2>
+
+        What is your name?
+        <br>
+        <input id="name" type="text">
+        <br><br>
+
+        How old are you?
+        <br>
+        <input id="age" type="text">
+        <br><br>
+
+        What is your favorite food?
+        <br>
+        <input id="favorite_food" type="text">
+        <br><br>
+
+        What is your favorite drink?
+        <br>
+        <input id="favorite_drink" type="text">
+        <br><br>
+
+        What is your favorite dessert?
+        <br>
+        <input id="favorite_dessert" type="text">
+        <br><br>
+        
+        What is your favorite fastfood?
+        <br>
+        <input id="favorite_fastfood" type="text">
+        <br><br>    
+
+        What is your preferred cuisine?
+        <br>
+        <input id="preferred_cuisine" type="text">
+        <br><br> 
+
+        Do you like spicy food?
+        <br>
+        <input id="spicy_food" type="text">
+        <br><br> 
+
+        How many times do you eat per day?
+        <br>
+        <input id="eating_frequency" type="text">
+        <br><br> 
+
+        Do you have any food allergies?
+        <br>
+        <input id="food_alergies" type="text">
+        <br><br> 
+
+        <button type="button"
+    onclick="clickButton(
+
+        document.getElementById('name').value,
+        document.getElementById('age').value,
+        document.getElementById('favorite_food').value,
+        document.getElementById('favorite_drinks').value,
+        document.getElementById('favorite_dessert').value,
+        document.getElementById('favorite_fastfood').value,
+        document.getElementById('preferred_cuisine').value,
+        document.getElementById('spicy_food').value,
+        document.getElementById('eating_frequency').value,
+        document.getElementById('food_allergies').value,
+        
+            <script>
+
+
+                const clickButton = async
+        (a,b,c,d,e,f,g,h,i,j) => {
+                const postDATA = {
+                    name: a,
+                    age: Number(b)
+                    favorite_food: c,
+                    favorite_drinks: d,
+                    favorite_dessert: e,
+                    favorite_fastfood: f,
+                    preferred_cuisine: g,
+                    spicy_food: h,
+                    eating_frequency: i,
+                    food_allergies: j
+
+                }:
+
+                const response = await 
+                
+                fetch (
+
+                 http://127.0.0.1:8000/FoodPreference",
+
+                { 
+                    method: "POST",
+                    headers: {
+
+"Content-Type": "application/json"
+                    },
+                    body:
+JSON.stringify(postData)
+                }
+                );
+                const result = await
+            response.json();\
+
+                alert("Survey submitted successfully!")
+
+            }
+
+        </script>
+</body>
+</html>
+
+
+
+        
